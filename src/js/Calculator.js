@@ -1,4 +1,4 @@
-import data from '@/js/modules/data'
+import data from '@/js/data'
 
 const Calculator = (() => {
   let screenValue = '0'

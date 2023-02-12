@@ -1,4 +1,4 @@
-import { Calculator } from "@/js/modules/Calculator";
+import { Calculator } from "@/js/Calculator";
 
 const App = (() => {
   function renderApp() {
