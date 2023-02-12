@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter.ttf');
+}
+
+@import 'mainStyles';
+html {
+  font-weight: 100;
+  font-size: 2em;
+  background: transparent;
+  height: 100%;
+  letter-spacing: 1px;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+}
+body {
+  background-color: #c5c98c;
+}

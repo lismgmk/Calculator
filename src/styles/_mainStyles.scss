@@ -1,0 +1,94 @@
+// STYLES FOR PAGE'S MAIN CONTENT
+
+// Button styles
+.button,
+.button:visited,
+.button:hover,
+.button:active,
+.button:focus {
+  border: 0;
+  border-radius: 0;
+  cursor: pointer;
+  line-height: normal;
+  padding: 0;
+  width: auto;
+  &:hover {
+    text-decoration: none;
+  }
+}
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+// Calculator styles
+.calculator {
+  margin: 0 auto;
+  width: 320px;
+  .screen {
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+    line-height: 1.8em;
+    overflow: auto;
+    padding-right: 5px;
+    text-align: right;
+    background-color: #000;
+    font-size: 1.5em;
+    color: white;
+  }
+  .calc-buttons-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto auto;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 2em;
+    border-bottom: 0.01em solid #333;
+    border-radius: 12px;
+
+    &:nth-child(4) {
+      grid-template-columns: 2fr auto auto auto;
+    }
+    .calc-button {
+      font-size: 0.4em;
+      line-height: 1.8em;
+      border-top: 0.01em solid #333;
+      border-left: 0.01em solid #333;
+      @media all and (orientation: landscape) {
+        height: 80px;
+        width: 80px;
+        color: white;
+        font-family: 'Inter', sans-serif;
+      }
+    }
+    .zeroWeight {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      width: 160px;
+      border-bottom-left-radius: 12px;
+    }
+    .grey {
+      background-color: #aaa;
+    }
+    .operator {
+      background-color: #ff9500;
+      border-right: 0.01em solid #333;
+    }
+    .number {
+      background-color: #bbb;
+    }
+    .equals {
+      border-bottom-right-radius: 12px;
+      border-right: 0.01em solid #333;
+    }
+  }
+}
