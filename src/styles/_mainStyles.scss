@@ -42,8 +42,8 @@ footer {
   .calc-buttons-container {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: auto auto auto auto;
-    grid-template-columns: auto auto auto auto;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
